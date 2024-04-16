@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+.coffee-type {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.coffee-type img {
+    width: 100%;
+    height: auto;
+}
+h2 { 
+    text-align: center;
+    margin-top: 20px;
+}
+.container {
+    padding: 20px;
+}
+.coffee-type a {
+    display: block;
+    color: inherit; 
+    text-decoration: none; 
+}
+.img-large {
+    width: 100%;
+    height: auto;
+}
+.img-small {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    background-color: #612524;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+
+}
+button:hover {
+    background-color: #4A1E1D;
+}

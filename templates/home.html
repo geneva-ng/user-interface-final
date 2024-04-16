@@ -1,29 +1,14 @@
-{% extends "layout.html" %}
-
-{% block content %}
-<style>
-    h1 {
-        margin-top: 20px;
-    }
-    #title {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    @media screen and (max-width: 768px) {
-        h1 {
-            margin-top: 0;
-            font-size: 24px;
-        }
-    }
-</style>    
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12" id="title">
-            <h1>How to Make Different Types of Coffee Drinks</h1>
-        </div>
-    </div>
-</div>
-
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Home</h1>
+    <button onclick="location.href='/learn'">Learn</button>
+    <button onclick="location.href='/quiz'">Quiz</button>
+</body>
+</html>

@@ -1,13 +1,44 @@
-from flask import Flask
-from flask import render_template
-from flask import Response, request, jsonify
+from flask import Flask, render_template, Response, request, jsonify
+
 app = Flask(__name__)
 
 data = []
 
 @app.route('/')
 def home():
-	return render_template('home.html')
+    return render_template('home.html')
+
+@app.route('/learn')
+def learn():
+    return render_template('select.html')
+
+@app.route('/cappuccino')
+def cappuccino():
+    return render_template('cappuccino.html')
+
+@app.route('/macchiato')
+def macchiato():
+    return render_template('macchiato.html')
+
+@app.route('/iced_coffee')
+def iced_coffee():
+    return render_template('iced_coffee.html')
+
+@app.route('/latte')
+def latte():
+    return render_template('latte.html')
+
+@app.route('/espresso')
+def espresso():
+    return render_template('espresso.html')
+
+@app.route('/americano')
+def americano():
+    return render_template('americano.html')
+
+@app.route('/quiz')
+def quiz():
+    return render_template('quiz.html')
 
 if __name__ == '__main__':
-   app.run(debug = True)
+    app.run(debug=True)
