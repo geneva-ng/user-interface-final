@@ -3,8 +3,8 @@ import json
 import time
 
 app = Flask(__name__)
-startTime = None
-endTime = None
+learnStartTime = None
+learnEndTime = None
 
 with open('./data/learn.json', 'r') as file:
     learn_data = json.load(file)
@@ -15,13 +15,13 @@ def home():
 
 @app.route('/learn/<int:id>')
 def learn(id):
-    global startTime
-    global endTime
-    if id ==1 and startTime == None:
-        startTime = time.time()
+    global learnStartTime
+    global learnEndTime
+    if id ==1 and learnStartTime == None:
+        learnStartTime = time.time()
     if id == 8:
-        endTime = time.time()
-        print(f"Total learning time in seconds: {endTime - startTime}")
+        learnEndTime = time.time()
+        print(f"Total learning time in seconds: {learnEndTime - learnStartTime}")
 
     for data in learn_data:
         if data["id"] == id:
