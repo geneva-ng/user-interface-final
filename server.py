@@ -40,9 +40,12 @@ def espresso():
 def americano():
     return render_template('americano.html')
 
-@app.route('/quiz')
-def quiz():
-    return render_template('quiz.html')
+@app.route('/quiz-page/<int:question_id>')
+def quiz_page(question_id):
+    if question_id in questions:
+        return render_template('quiz.html', question_id=question_id) 
+    else:
+        return "Question not found", 404
 
 if __name__ == '__main__':
     app.run(debug=True)
