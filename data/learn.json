@@ -1,201 +1,288 @@
 [{
-  "id": 1,
-  "title": "Cappucino",
-  "leftText1": "We are going to begin by learning how to make the classic cappucino.",
-  "leftText2": "",
-  "rightText1": "The first ingredient of a cappuccino is <strong>espresso</strong>",
-  "rightText2": "",
-  "leftImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
+    "id": 1,
+	"lastPage": false,
+    "title": "Cappucino",
+    "leftText1": "We are going to begin by learning how to make the classic cappucino.",
+    "leftText2": "",
+    "rightText1": "The first ingredient of a cappuccino is <strong>espresso</strong>",
+    "rightText2": "",
+    "leftImage": {
+      "src": "",
+      "alt": ""
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713322620/kisspng-cappuccino-espresso-coffee-cafe-latte-milk-tea-5ace6cb3d48a56.5992110715234776838706_1_nhbmij.png",
+      "alt": "cappucino cup"
+    },
+    "rightImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371338/espresso_glass_2_full_fwpdqz.png",
+      "alt": "full espresso glass"
+    },
+    "states": {
+      "initial": {
+		"action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
     }
   },
-  "centerImage": {
-    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713322620/kisspng-cappuccino-espresso-coffee-cafe-latte-milk-tea-5ace6cb3d48a56.5992110715234776838706_1_nhbmij.png",
-    "alt": "cappucino cup",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  },
-  "rightImage": {
-    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713322131/espresso_glass_jyu3dd.png",
-    "alt": "full espresso glass",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  }
-},
- {
-  "id": 2,
-  "title": "Grinding the beans",
-  "leftText1": "To prepare the espresso, we begin by grinding the coffee beans.",
-  "leftText2": "",
-  "rightText1": "The grinder must be set to <b>extra fine</b> for espresso.",
-  "rightText2": "",
-  "leftImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  },
-  "centerImage": {
-    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713327658/coffee_grinder_sfir8l.png",
-    "alt": "Coffee grinder",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  },
-  "rightImage": {
-    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713328207/cofee_ground_settings_tibfgu.png",
-    "alt": "coffee ground settings",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  }
-},
- {
-  "id": 3,
-  "title": "",
-  "leftText1": "",
-  "leftText2": "",
-  "rightText1": "",
-  "rightText2": "",
-  "leftImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  },
-  "centerImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  },
-  "rightImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
-    }
-  }
-},
   {
-  "id": 4,
-  "title": "",
-  "leftText1": "",
-  "leftText2": "",
-  "rightText1": "",
-  "rightText2": "",
-  "leftImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
+    "id": 2,
+	"lastPage": false,
+    "title": "Grinding the beans",
+    "leftText1": "To prepare the espresso, we begin by grinding the coffee beans.",
+    "leftText2": "",
+    "rightText1": "The grinder must be set to <b>extra fine</b> for espresso.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "",
+      "alt": ""
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713327658/coffee_grinder_sfir8l.png",
+      "alt": "Coffee grinder"
+    },
+    "rightImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713328207/cofee_ground_settings_tibfgu.png",
+      "alt": "coffee ground settings"
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
     }
   },
-  "centerImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
+  {
+    "id": 3,
+	"lastPage": false,
+    "title": "Preparing the espresso",
+    "leftText1": "Now we need to tamp down the espresso grounds with the <b>tamper</b> below.",
+    "leftText2": "",
+    "rightText1": "Drag the <b>tamper</b> onto the <b>portafilter</b> in the center to press the grounds.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713369220/tamper_fmzbkp.png",
+      "alt": "coffee tamper"
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713369203/portafilter_uq7tmw.png",
+      "alt": "portafilter"
+    },
+    "rightImage": {
+      "src": "",
+      "alt": ""
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
     }
   },
-  "rightImage": {
-    "src": "",
-    "alt": "",
-    "clickable": false,
-    "draggable": false,
-    "droppable": false,
-    "droppableTarget": "",
-    "droppableRegion": {
-      "top": 0,
-      "left": 0,
-      "width": 0,
-      "height": 0
+  {
+    "id": 4,
+	"lastPage": false,
+    "title": "Pulling the shot",
+    "leftText1": "Time to pull the espresso shot.",
+    "leftText2": "",
+    "rightText1": "Drag the <b>espresso glass</b> under the portafilter spout.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371331/espresso_glass_2_empty_brnxsz.png",
+      "alt": "empty espresso glass"
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713370936/espresso_machine_no_glass_focw4r.png",
+      "alt": "Espresso Machine"
+    },
+    "rightImage": {
+      "src": "",
+      "alt": ""
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
     }
+  },
+  {
+    "id": 5,
+	"lastPage": false,
+    "title": "Adding the espresso",
+    "leftText1": "Now we add the espresso to the drink.",
+    "leftText2": "",
+    "rightText1": "Drag the <b>espresso</b> to the glass to pour it.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371338/espresso_glass_2_full_fwpdqz.png",
+      "alt": "full espresso glass"
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371974/empty_coffee_mug_mlvzpf.png",
+      "alt": "empty glass coffee mug"
+    },
+    "rightImage": {
+      "src": "",
+      "alt": ""
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
+    }
+  },
+  {
+    "id": 6,
+	"lastPage": false,
+    "title": "Steaming the milk",
+    "leftText1": "Time to steam the milk.",
+    "leftText2": "",
+    "rightText1": "Drag the <b>milk tumbler</b> to the <b>steam wand</b>.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "",
+      "alt": ""
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713370936/espresso_machine_no_glass_focw4r.png",
+      "alt": "espresso machine"
+    },
+    "rightImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713375361/milk_tumbler_no_foam_lrqgvl.png",
+      "alt": "milk tumbler"
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
+    }
+  },
+  {
+    "id": 7,
+	"lastPage": false,
+    "title": "Adding the milk and foam",
+    "leftText1": "Now we can add the <b>milk</b> and <b>foam</b> to the drink.",
+    "leftText2": "",
+    "rightText1": "Drag the <b>milk tumbler</b> to the glass to pour it.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713375366/milk_tumbler_foam_lt1gva.png",
+      "alt": "milk tumbler with foam"
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371974/empty_coffee_mug_mlvzpf.png",
+      "alt": "glass mug with espresso"
+    },
+    "rightImage": {
+      "src": "",
+      "alt": ""
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
+    }
+  },
+  {
+    "id": 8,
+	"lastPage": true,
+    "title": "Cappuccino complete!",
+    "leftText1": "Great work! Our cappuccino is complete.",
+    "leftText2": "",
+    "rightText1": "You can remember how to make a cappuccino by the <b>1:1:1 rule</b> for one part of each ingredient.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "",
+      "alt": ""
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713322620/kisspng-cappuccino-espresso-coffee-cafe-latte-milk-tea-5ace6cb3d48a56.5992110715234776838706_1_nhbmij.png",
+      "alt": "cappucino"
+    },
+    "rightImage": {
+      "src": "",
+      "alt": ""
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+
+    }
+  },
+  {
+    "id": 9,
+	"lastPage": true,
+    "title": "",
+    "leftText1": "",
+    "leftText2": "",
+    "rightText1": "",
+    "rightText2": "",
+    "leftImage": {
+      "src": "",
+      "alt": ""
+    },
+    "centerImage": {
+      "src": "",
+      "alt": ""
+    },
+    "rightImage": {
+      "src": "",
+      "alt": ""
+    },
+    "states": {
+      "initial": {
+		 "action": "initial",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+	  
   }
-}
+  }
 ]

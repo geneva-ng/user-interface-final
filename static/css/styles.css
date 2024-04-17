@@ -32,6 +32,17 @@ h2 {
     height: auto;
     margin-bottom: 10px;
 }
+.learnSideImage{
+	margin-top: 20px;
+}
+.learnTitle{
+	margin-bottom: 10px;
+	font-size: 28px;
+}
+.learnTextPlain{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
 button {
     margin: 10px;
     padding: 10px 20px;

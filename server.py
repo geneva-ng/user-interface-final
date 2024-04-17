@@ -1,7 +1,10 @@
 from flask import Flask, render_template, Response, request, jsonify
 import json
+import time
 
 app = Flask(__name__)
+startTime = None
+endTime = None
 
 with open('./data/learn.json', 'r') as file:
     learn_data = json.load(file)
@@ -12,6 +15,14 @@ def home():
 
 @app.route('/learn/<int:id>')
 def learn(id):
+    global startTime
+    global endTime
+    if id ==1 and startTime == None:
+        startTime = time.time()
+    if id == 8:
+        endTime = time.time()
+        print(f"Total learning time in seconds: {endTime - startTime}")
+
     for data in learn_data:
         if data["id"] == id:
             return render_template('learn.html', data=data)
