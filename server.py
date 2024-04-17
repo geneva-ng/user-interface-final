@@ -1,5 +1,8 @@
 from flask import Flask, render_template, Response, request, jsonify, redirect, url_for, session
 import json
+import time
+learnStartTime = None
+learnEndTime = None
 
 app = Flask(__name__)
 app.secret_key = 'some_random_secret_key'  # Set to a random string
@@ -13,6 +16,13 @@ def home():
 
 @app.route('/learn/<int:id>')
 def learn(id):
+    global learnStartTime
+    global learnEndTime
+    if id ==1 and learnStartTime == None:
+        learnStartTime = time.time()
+    if id == 8:
+        learnEndTime = time.time()
+        print(f"Total learning time in seconds: {learnEndTime - learnStartTime}")
     for data in learn_data:
         if data["id"] == id:
             return render_template('learn.html', data=data)
