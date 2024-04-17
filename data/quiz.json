@@ -1,0 +1,23 @@
+
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which drinks contain chocolate? Select all that apply.",
+      "options": ["Mocha", "Rome", "Berlin", "Madrid"],
+      "answer": "Mocha"
+    },
+    {
+      "id": 2,
+      "question": "What ingredients are in Irish Coffee? Select all that apply.",
+      "options": ["Coffee", "Irish Whiskey", "Sugar", "Cream", "Milk", "Chocolate"],
+      "answers": ["Coffee", "Irish Whiskey", "Sugar", "Cream"]
+    },
+    {
+      "id": 10,
+      "question": "Final question text",
+      "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+      "answer": "Correct answer"
+    }
+  ]
+}

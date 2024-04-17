@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Text</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Full height of the viewport */
-            margin: 0; /* Remove default margin */
-            font-family: Arial, sans-serif; /* Set font style */
-        }
-    </style>
-</head>
-<body>
-    <p>Brennan and Naomi, pick it up from here! Feel free to clear out this html, just a heads up that this is the specific template that's rendered under the "/quiz" route.</p>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Quiz Question{% endblock %}
+
+{% block content %}
+    <h1>{{ question.question }}</h1>
+    <form id="quiz-form" action="/submit_answer" method="post">
+        {% for option in question.options %}
+            <div class="coffee-type">
+                <input type="checkbox" id="option{{ loop.index }}" name="answers" value="{{ option }}">
+                <label for="option{{ loop.index }}">{{ option }}</label>
+            </div>
+        {% endfor %}
+        <input type="hidden" name="question_id" value="{{ question.id }}">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="timer"></div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='quiz.js') }}"></script>
+{% endblock %}
