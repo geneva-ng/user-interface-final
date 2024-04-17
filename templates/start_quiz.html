@@ -1,0 +1,15 @@
+{% extends "layout.html" %} 
+{% block title %}Start Quiz{% endblock %}
+
+{% block content %}
+    <h1>Quiz</h1>
+    <p>This is a timed quiz to test your knowledge. The quiz will consist of 5 questions to test your knowledge.</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+
+    <script>
+        function startQuiz() {
+            // Optionally do something here
+            window.location.href = '/quiz/1';
+        }
+    </script>
+{% endblock content %}
