@@ -1,16 +1,20 @@
 from flask import Flask, render_template, Response, request, jsonify
+import json
 
 app = Flask(__name__)
 
-data = []
+with open('./data/learn.json', 'r') as file:
+    learn_data = json.load(file)
 
 @app.route('/')
 def home():
     return render_template('home.html')
 
-@app.route('/learn')
-def learn():
-    return render_template('select.html')
+@app.route('/learn/<int:id>')
+def learn(id):
+    for data in learn_data:
+        if data["id"] == id:
+            return render_template('learn.html', data=data)
 
 @app.route('/cappuccino')
 def cappuccino():

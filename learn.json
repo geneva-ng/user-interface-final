@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "title": "Cappucino",
+  "leftText1": "We are going to begin by learning how to make the classic cappucino.",
+  "leftText2": "",
+  "rightText1": "The first ingredient of a cappuccino is <b>espresso</b>",
+  "rightText2": "",
+  "leftImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "centerImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "rightImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  }
+},

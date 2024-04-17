@@ -1,0 +1,201 @@
+[{
+  "id": 1,
+  "title": "Cappucino",
+  "leftText1": "We are going to begin by learning how to make the classic cappucino.",
+  "leftText2": "",
+  "rightText1": "The first ingredient of a cappuccino is <strong>espresso</strong>",
+  "rightText2": "",
+  "leftImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "centerImage": {
+    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713322620/kisspng-cappuccino-espresso-coffee-cafe-latte-milk-tea-5ace6cb3d48a56.5992110715234776838706_1_nhbmij.png",
+    "alt": "cappucino cup",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "rightImage": {
+    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713322131/espresso_glass_jyu3dd.png",
+    "alt": "full espresso glass",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  }
+},
+ {
+  "id": 2,
+  "title": "Grinding the beans",
+  "leftText1": "To prepare the espresso, we begin by grinding the coffee beans.",
+  "leftText2": "",
+  "rightText1": "The grinder must be set to <b>extra fine</b> for espresso.",
+  "rightText2": "",
+  "leftImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "centerImage": {
+    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713327658/coffee_grinder_sfir8l.png",
+    "alt": "Coffee grinder",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "rightImage": {
+    "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713328207/cofee_ground_settings_tibfgu.png",
+    "alt": "coffee ground settings",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  }
+},
+ {
+  "id": 3,
+  "title": "",
+  "leftText1": "",
+  "leftText2": "",
+  "rightText1": "",
+  "rightText2": "",
+  "leftImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "centerImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "rightImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  }
+},
+  {
+  "id": 4,
+  "title": "",
+  "leftText1": "",
+  "leftText2": "",
+  "rightText1": "",
+  "rightText2": "",
+  "leftImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "centerImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "rightImage": {
+    "src": "",
+    "alt": "",
+    "clickable": false,
+    "draggable": false,
+    "droppable": false,
+    "droppableTarget": "",
+    "droppableRegion": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    }
+  }
+}
+]
