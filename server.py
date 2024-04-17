@@ -4,6 +4,7 @@ import time
 learnStartTime = None
 learnEndTime = None
 
+
 app = Flask(__name__)
 app.secret_key = 'some_random_secret_key'  # Set to a random string
 
