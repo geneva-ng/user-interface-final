@@ -1,5 +1,99 @@
-{% extends "layout.html" %} {% block content %} 
-<h1> Welcome</h1>
-{% endblock %} 
-{% block scripts %} 
-{% endblock %} 
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'layout.js') }}"></script> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <style>
+    /* body {
+      background-color: #f8f9fa;
+    } */
+    nav {
+        background-color: transparent !important;
+    }
+    .navbar-nav {
+        margin-left: 20px;
+    }
+    .navbar-nav.menu .nav-link {
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .navbar-brand {
+      text-decoration: none;
+      font-size: 26px;
+    }
+    html,
+    body {
+      overflow: hidden;
+    }
+    main {
+      background-color: #fff;
+      min-height: calc(100vh - 65px);
+      height: calc(100vh - 65px);
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+
+    }
+    main > section {
+      height: calc(100vh - 65px);
+      display: flex;
+      background: #eee;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    main > section:nth-child(odd) {
+      background: #ddd;
+    }
+    main > section > div {
+      margin: auto;
+      text-align: center;
+    }
+    #section-1 {
+      background: url('https://img.freepik.com/free-photo/coffee-concept-with-beans-falling-out-bag-space_23-2147671399.jpg?w=2000&t=st=1713377292~exp=1713377892~hmac=7932604948693c04512604fbe312f72278e73ba6f4f2e612ad170b5f827a4753');
+      background-size: cover;
+    }
+  </style>
+
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <title>UI Design Final</title>
+  </head>
+  <body>    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/learn/1">Learn</a>
+          <a class="nav-link" href="/quiz">Quiz</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <section id="section-1">
+            <div>
+                <h1>Welcome</h1>
+            </div>
+        </section>
+        <section id="section-2">
+            <div>
+                <h2>Wanna Learn About Coffee?</h2>
+            </div>
+        </section>
+        <section id="section-3">
+            <div>
+                <h2>Take a Quiz</h2>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
