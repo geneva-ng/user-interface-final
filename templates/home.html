@@ -14,85 +14,201 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.8.0/build/player/lottie.min.js"></script>
+
   <style>
     /* body {
       background-color: #f8f9fa;
     } */
     nav {
-        background-color: transparent !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #6e4f2eff !important;
+        z-index: 1000;
     }
     .navbar-nav {
         margin-left: 20px;
     }
     .navbar-nav.menu .nav-link {
-      text-decoration: none;
-      margin-right: 10px;
+        text-decoration: none;
+        margin-right: 10px;
     }
     .navbar-brand {
-      text-decoration: none;
-      font-size: 26px;
+        text-decoration: none;
+        font-size: 26px;
+    }
+    span, a, p, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Noto Sherif', serif;
     }
     html,
     body {
-      overflow: hidden;
+        overflow: hidden;
     }
     main {
-      background-color: #fff;
-      min-height: calc(100vh - 65px);
-      height: calc(100vh - 65px);
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-
+        background-color: #f2f0eb;
+        /* min-height: calc(100vh - 65px); */
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s cubic-bezier(0, 0, 1, 0);
     }
     main > section {
-      height: calc(100vh - 65px);
-      display: flex;
-      background: #eee;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-    main > section:nth-child(odd) {
-      background: #ddd;
+        transform: translateY(0%);
+        height: 100vh;
+        display: flex;
+        position: relative;
+        overflow: hidden;
     }
     main > section > div {
-      margin: auto;
-      text-align: center;
+        margin: auto;
+        text-align: center;
     }
-    #section-1 {
-      background: url('https://img.freepik.com/free-photo/coffee-concept-with-beans-falling-out-bag-space_23-2147671399.jpg?w=2000&t=st=1713377292~exp=1713377892~hmac=7932604948693c04512604fbe312f72278e73ba6f4f2e612ad170b5f827a4753');
-      background-size: cover;
+    .center-div {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-height: calc(100vh - 65px);
+        max-width: 60%;
+    }
+    /* .center-div img {
+        transition: all 2s linear;
+        transform: scale(1.3);
+    } */
+    /* section img {
+        position: absolute;
+        transition: all 2s linear;
+        transform: scale(1.3);
+    } */
+    #section-1 img {
+        position: absolute;
+        transition: all 2s linear;
+        transform: scale(1.3);
+
+        bottom: 0;
+        right: 0;
+    }
+    #section-2 img,
+    #section-3 img {
+        transition: all 2s linear;
+        transform: scale(1.3);
+    }
+    #section-2 .img-wrapper,
+    #section-3 .img-wrapper {
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15%;
+    }
+    #section-3 .img-wrapper {
+        right: 10%;
+    }
+    .text-div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+        transition: all 0.5s linear, top 0.3s ease-in;
+        font-weight: bold;
+    }
+    .text-2 {
+        /* font-size: 20px; */
+        height: 30px;
+        text-align: left;
+        color: rgb(137, 137, 137);
+        font-weight: normal;
+    }
+    .text-div p {
+        font-size: 20px;
+    }
+    #lottie-container {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        opacity: 0.7;
+        z-index: 1000;
+        transition: opacity 0.3s linear;
+    }
+    #get-started {
+        opacity: 0;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: #6e4f2eff;
+        color: #f2f0eb;
+        text-decoration: none;
+        transition: all 0.3s linear;
+        cursor: pointer;
     }
   </style>
 
   <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  <script src="{{url_for('static', filename='js/home.js')}}"></script>
     <title>UI Design Final</title>
   </head>
   <body>    
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <div class="navbar-nav">
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link" href="/learn/1">Learn</a>
-          <a class="nav-link" href="/quiz">Quiz</a>
+          <a class="nav-link" href="/" style="color: #f2f0eb;">Home</a>
+          <a class="nav-link" href="/learn/1" style="color: #f2f0eb;">Learn</a>
+          <a class="nav-link" href="/quiz" style="color: #f2f0eb;">Quiz</a>
         </div>
       </div>
     </nav>
 
-    <main>
+    <div id="lottie-container"></div>
+
+    <main id="main">
         <section id="section-1">
-            <div>
-                <h1>Welcome</h1>
+            <div class="center-div">
+                <div class="text-div">
+                    <h1 class="text-1"></h1>
+                    <p class="text-2"></p>
+                </div>
+                <!-- <img class="img-scale" src="https://www.pngmart.com/files/21/Coffee-PNG.png" alt="Coffee" width="200px" height="200px"> -->
             </div>
+            <img class="img-scale" src="/static/img/coffee-4-remove-bg.png" alt="Coffee" width="800px">
         </section>
         <section id="section-2">
-            <div>
-                <h2>Wanna Learn About Coffee?</h2>
+            <div class="center-div">
+                <div class="text-div">
+                    <h4 class="text-1" style="color: darkgray;"></h4>
+                    <h1 class="text-2" style="color: #000;"></h1>
+                </div>
+            </div>
+            <div class="img-wrapper">
+                <img class="img-scale" src="/static/img/cappuchino-top-view.png" alt="Coffee" width="500px">
             </div>
         </section>
         <section id="section-3">
-            <div>
-                <h2>Take a Quiz</h2>
+            <div class="center-div">
+                <div class="text-div">
+                    <h1 class="text-1"></h1>
+                    <p class="text-2"></p>
+                </div>
             </div>
+            <div class="img-wrapper">
+                <img class="img-scale" src="/static/img/mocha.png" alt="Coffee" width="700px">
+            </div>
+            <a id="get-started" href="/learn/1" class="btn btn-primary">
+                Get Started
+            </a>
         </section>
     </main>
   </body>
