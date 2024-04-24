@@ -1,15 +1,70 @@
-{% extends "layout.html" %} 
-{% block title %}Start Quiz{% endblock %}
+{% extends "layout.html" %}
+
+{% block title %}
+Start Quiz
+{% endblock %}
 
 {% block content %}
-    <h1>Quiz</h1>
-    <p>This is a timed quiz to test your knowledge. The quiz will consist of 5 questions to test your knowledge.</p>
-    <button onclick="startQuiz()">Start Quiz</button>
+<div class="quiz-intro">
+    <h1>Welcome, Barista!</h1>
+    <div class="quiz-description">
+        <p>You're now part of the bustling coffee shop crew. As a barista, your challenge is to prepare drinks correctly and quickly. You will receive orders and must select the correct sequence of ingredients for each beverage. But be swift! Each order is timed, and you have only a limited window to complete the task.</p>
+        <p>Are you ready to show your coffee-making prowess? Let's begin the test of your barista skills!</p>
+        <button class="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+</div>
 
-    <script>
-        function startQuiz() {
-            // Optionally do something here
-            window.location.href = '/quiz/1';
-        }
-    </script>
+<script>
+    function startQuiz() {
+        // Optionally do something here, like tracking or animations
+        window.location.href = '/quiz/1';
+    }
+</script>
 {% endblock content %}
+
+{% block head %}
+<style>
+  .quiz-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .quiz-description {
+    text-align: center;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .start-quiz-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    outline: none;
+  }
+
+  .start-quiz-btn:hover {
+    background-color: #5a6268;
+  }
+
+  .start-quiz-btn:active {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .quiz-description {
+      width: 90%;
+    }
+  }
+</style>
+{% endblock head %}
