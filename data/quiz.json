@@ -1,23 +1,109 @@
-
 {
   "questions": [
     {
       "id": 1,
-      "question": "Which drinks contain chocolate? Select all that apply.",
-      "options": ["Mocha", "Rome", "Berlin", "Madrid"],
-      "answer": "Mocha"
+      "type": "multiple-choice",
+      "prompt": "What is the first key ingredient mentioned in the process of making a cappuccino?",
+      "options": ["Milk", "Sugar", "Espresso", "Water"],
+      "correct_answer": "Espresso"
     },
     {
       "id": 2,
-      "question": "What ingredients are in Irish Coffee? Select all that apply.",
-      "options": ["Coffee", "Irish Whiskey", "Sugar", "Cream", "Milk", "Chocolate"],
-      "answers": ["Coffee", "Irish Whiskey", "Sugar", "Cream"]
+      "type": "multiple-choice",
+      "prompt": "What setting should the coffee grinder be on to prepare espresso?",
+      "options": ["Coarse", "Medium", "Fine", "Extra fine"],
+      "correct_answer": "Extra fine"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "prompt": "What tool is used to tamp down the espresso grounds?",
+      "options": ["Spoon", "Tamper", "Knife", "Fork"],
+      "correct_answer": "Tamper"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "prompt": "Where should the espresso glass be placed to pull an espresso shot?",
+      "options": ["Next to the espresso machine", "Under the espresso machine's steam wand", "Under the portafilter spout", "On top of the coffee grinder"],
+      "correct_answer": "Under the portafilter spout"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "prompt": "What action should be taken after pulling the espresso shot?",
+      "options": ["The espresso should be discarded", "The espresso should be cooled down", "The espresso should be added to a glass", "The espresso should be reheated"],
+      "correct_answer": "The espresso should be added to a glass"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "prompt": "What is the correct sequence for adding ingredients to the cappuccino?",
+      "options": ["Milk, espresso, foam", "Foam, milk, espresso", "Espresso, milk, foam", "Milk, foam, espresso"],
+      "correct_answer": "Espresso, milk, foam"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "prompt": "Which of the following is not shown as an image in the tutorial steps?",
+      "options": ["Espresso machine", "Coffee beans", "Milk tumbler with foam", "Tamper"],
+      "correct_answer": "Coffee beans"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "prompt": "What is the '1:1:1 rule' mentioned in the last step of the tutorial?",
+      "options": ["One part water, one part espresso, one part milk", "One part milk, one part sugar, one part espresso", "One part espresso, one part milk, one part foam", "One part coffee, one part water, one part milk"],
+      "correct_answer": "One part espresso, one part milk, one part foam"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "prompt": "How is the user instructed to interact with the milk tumbler during the steaming process?",
+      "options": ["Pour the milk into the espresso", "Drag the milk tumbler to the steam wand", "Shake the milk tumbler", "Place the milk tumbler next to the espresso machine"],
+      "correct_answer": "Drag the milk tumbler to the steam wand"
     },
     {
       "id": 10,
-      "question": "Final question text",
-      "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
-      "answer": "Correct answer"
+      "type": "multiple-choice",
+      "prompt": "Which step involves dragging an item to a target in the interactive module?",
+      "options": ["Grinding the beans", "Tamping the grounds", "Pulling the shot", "All of the above"],
+      "correct_answer": "All of the above"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "prompt": "What action should be taken after pulling the espresso shot?",
+      "options": ["The espresso should be discarded", "The espresso should be cooled down", "The espresso should be added to a glass", "The espresso should be reheated"],
+      "correct_answer": "The espresso should be added to a glass"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "prompt": "What is the correct sequence for adding ingredients to the cappuccino?",
+      "options": ["Milk, espresso, foam", "Foam, milk, espresso", "Espresso, milk, foam", "Milk, foam, espresso"],
+      "correct_answer": "Espresso, milk, foam"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "prompt": "Which of the following is not shown as an image in the tutorial steps?",
+      "options": ["Espresso machine", "Coffee beans", "Milk tumbler with foam", "Tamper"],
+      "correct_answer": "Coffee beans"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "prompt": "What is the '1:1:1 rule' mentioned in the last step of the tutorial?",
+      "options": ["One part water, one part espresso, one part milk", "One part milk, one part sugar, one part espresso", "One part espresso, one part milk, one part foam", "One part coffee, one part water, one part milk"],
+      "correct_answer": "One part espresso, one part milk, one part foam"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "prompt": "How is the user instructed to interact with the milk tumbler during the steaming process?",
+      "options": ["Pour the milk into the espresso", "Drag the milk tumbler to the steam wand", "Shake the milk tumbler", "Place the milk tumbler next to the espresso machine"],
+      "correct_answer": "Drag the milk tumbler to the steam wand"
     }
   ]
 }
