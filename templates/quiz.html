@@ -1,112 +1,19 @@
 {% extends "layout.html" %}
 
-{% block title %}
-Quiz Question
-{% endblock %}
-
 {% block content %}
-
-<div class="container">
-  <div class="upper-part">
-    <div class="objective">
-      <h2>OBJECTIVE</h2>
-      <p>Select the correct order of ingredients needed to make a cappuccino.</p>
-    </div>
-    
-    <div class="glass">
-      <img src="path_to_glass_image.png" alt="Empty Glass" />
-    </div>
-
-    <div class="ingredients">
-      <!-- Repeat this block for each draggable ingredient -->
-      <div class="ingredient" draggable="true" data-ingredient="espresso">
-        <img src="path_to_espresso_icon.png" alt="Espresso" />
-        <span>Espresso</span>
-      </div>
-      <!-- ... other ingredients -->
-    </div>
-  </div>
-
-  <div class="lower-part">
-    <div class="orders">
-      <h3>ORDERS</h3>
-      <div class="order-item">
-        <span>Irish Coffee</span>
-        <span class="timer">1:03</span>
-      </div>
-      <div class="order-item">
-        <span>Cappuccino</span>
-        <span class="timer">2:29</span>
-      </div>
-    </div>
-
-    <div class="sequence-boxes">
-      <!-- Repeat this block for each sequence box -->
-      <div class="sequence-box"></div>
-      <!-- ... other boxes -->
-    </div>
-
-    <button class="check-answer">CHECK ANSWER</button>
-  </div>
+<div class="quiz-intro text-center">
+    <h1>Welcome to the Quiz!</h1>
+    <p class="lead">Test your knowledge with a quick quiz. Click the button below to begin!</p>
+    <button id="startQuiz" class="btn btn-primary">Begin the Quiz</button>
+</div>
+<div id="quizContainer" class="mt-4" style="display:none;">
+    <!-- Quiz questions will be dynamically inserted here by quiz.js -->
+</div>
+<div id="quizResults" class="mt-4" style="display:none;">
+    <!-- Quiz results will be shown here by quiz.js -->
 </div>
 {% endblock %}
 
-
-
-<head>
-    <style>
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .upper-part {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .objective {
-    flex-basis: 20%;
-  }
-  
-  .glass {
-    flex-basis: 20%;
-    align-self: center;
-  }
-  
-  .ingredients {
-    flex-basis: 40%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .lower-part {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .orders {
-    margin-bottom: 20px;
-  }
-  
-  .sequence-boxes {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .sequence-box {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    margin-right: 10px;
-  }
-  
-  .check-answer {
-    align-self: flex-end;
-  }
-  </style>
-    </head>
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+{% endblock %}
