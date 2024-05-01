@@ -24,7 +24,7 @@ def learn(id):
         learnStartTime = time.time()
     if id == 8:
         learnEndTime = time.time()
-        print(f"Total learning time in seconds: {learnEndTime - learnStartTime}")
+        #print(f"Total learning time in seconds: {learnEndTime - learnStartTime}")
     for data in learn_data:
         if data["id"] == id:
             return render_template('learn.html', data=data)

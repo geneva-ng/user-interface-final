@@ -2,6 +2,25 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
+#titleColumn {
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: bold; 
+    font-family: 'Noto Serif Thai', serif;
+}
+.btn-primary {
+    background-color: #6e4f2eff; 
+    border-color: #6e4f2eff; 
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #47341F; 
+    border-color: #47341F;
+}
+
+.learnContainer{
+	font-family: 'Noto Serif Thai', serif;
+}
 .coffee-type {
     text-align: center;
     margin-bottom: 20px;
@@ -41,6 +60,9 @@ h2 {
 .learnTextPlain{
 	font-size: 16px;
 	margin-bottom: 10px;
+}
+.clickable-area {
+    cursor: pointer;
 }
 button {
     margin: 10px;
