@@ -160,6 +160,39 @@
         transition: all 0.3s linear;
         cursor: pointer;
     }
+    @media only screen and (max-width: 500px) {
+        #section-1 img,
+        #section-2 img,
+        #section-3 img {
+            display: none;
+        }
+        .text-div {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+        }
+        .text-div h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+        .text-div h4 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .text-div p {
+            font-size: 14px;
+            text-align: center;
+        }
+        #get-started {
+            bottom: 60px;
+            font-size: 16px;
+        }
+        .navbar-nav {
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+        }
+    }
   </style>
 
   <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
