@@ -9,13 +9,19 @@ body {
     font-family: 'Noto Serif Thai', serif;
 }
 .btn-primary {
-    background-color: #6e4f2eff; 
-    border-color: #6e4f2eff; 
+    background-color: #6e4f2eff !important; 
+    border-color: #6e4f2eff !important; 
 }
 
-.btn-primary:hover, .btn-primary:focus {
-    background-color: #47341F; 
-    border-color: #47341F;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #47341F !important; 
+    border-color: #47341F !important;
+	outline: 0px solid #6e4f2eff !important;
+}
+.btn-primary:active {
+    background-color: #47341F !important; 
+    border-color: #47341F !important;
+	outline: 4px solid #6e4f2eff !important;
 }
 
 .learnContainer{
@@ -77,6 +83,6 @@ button {
     transition: background-color 0.3s;
 
 }
-button:hover {
+button:hover{
     background-color: #4A1E1D;
 }

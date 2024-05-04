@@ -5,7 +5,7 @@ const text = [
     ],
     [
         'Do You Want to Learn How to Make',
-        'Cappuchino?',
+        'Cappucino?',
     ],
     [
         'Mocha? And More?',

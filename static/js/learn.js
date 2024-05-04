@@ -86,7 +86,7 @@ $(document).ready(function () {
   var backButton = $('<a/>', {
     id: 'backButton',
     text: 'Back',
-    class: 'btn btn-primary',
+    class: 'btn btn-primary active',
     href: "/learn/" + (data.id - 1),
     role: 'button'
   });
@@ -96,7 +96,7 @@ $(document).ready(function () {
   var continueButton = $('<a/>', {
     id: 'continueButton',
     text: 'Continue',
-    class: 'btn btn-primary',
+    class: 'btn btn-primary active',
     href: "/learn/" + (data.id + 1),
     role: 'button'
   });
