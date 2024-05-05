@@ -12,6 +12,9 @@ $(document).ready(function() {
             type: 'GET',
             success: function(data) {
                 questions = data.questions;
+                questions = shuffleArray(questions); // Shuffle the questions
+                currentQuestionIndex = 0;
+                answers = new Array(questions.length).fill(null); // Initialize answers array
                 displayQuestion(currentQuestionIndex); // Display the first question
             },
             error: function(error) {
@@ -21,55 +24,51 @@ $(document).ready(function() {
     });
 
     function displayQuestion(index) {
-        if (!questions[index]) {
-            console.error("No question found at index:", index);
-            return; // Stop further execution if the question is undefined
+        if (index >= questions.length) {
+            submitAnswers();
+            return;
         }
-    
+
         let quizContainer = $('#quizContainer');
         quizContainer.empty(); // Clear previous contents
-    
+
         let question = questions[index];
         console.log("Displaying question:", question); // Logs the current question
-    
+
         if (!question.options && question.type === 'multiple-choice') {
             console.error("Options missing for multiple-choice question:", question);
         }
-    
+
         let questionHtml = `<div class='question'><h3>Q${index + 1}: ${question.prompt}</h3>`;
-    
+
         if (question.type === 'multiple-choice') {
             questionHtml += '<ul class="list-unstyled">';
             question.options.forEach((option, optionIndex) => {
-                questionHtml += `<li><input type='radio' name='question${index}' value='${option}'> ${option}</li>`;
+                const checked = answers[index] === option ? "checked" : "";
+                questionHtml += `<li><input type='radio' name='question${index}' value='${option}' ${checked}> ${option}</li>`;
             });
             questionHtml += '</ul>';
         } else if (question.type === 'drag-and-drop') {
             questionHtml += '<ul class="sortable">';
             question.items.forEach(item => {
-                questionHtml += `<li class='ui-state-default'>${item}</li>`;
+                questionHtml += `<li class='ui-state-default' data-item='${item}'>${item}</li>`;
             });
             questionHtml += '</ul>';
         }
-    
+
         questionHtml += '</div>';
         quizContainer.html(questionHtml);
-    
+
         if (question.type === 'drag-and-drop') {
             initSortable();
         }
-    
+
         quizContainer.append(`<button id="nextQuestion" class="btn btn-primary">Next Question</button>`);
         $('#nextQuestion').on('click', function() {
             collectAnswer(index);
-            if (index < questions.length - 1) {
-                displayQuestion(index + 1);
-            } else {
-                submitAnswers();
-            }
+            displayQuestion(index + 1);
         });
     }
-    
 
     function initSortable() {
         $(".sortable").sortable();
@@ -100,5 +99,13 @@ $(document).ready(function() {
 
     function showResults(score, total) {
         $('#quizContainer').empty().html(`<h2>Your Score: ${score}/${total}</h2>`);
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
     }
 });
