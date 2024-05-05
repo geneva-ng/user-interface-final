@@ -86,3 +86,46 @@ button {
 button:hover{
     background-color: #4A1E1D;
 }
+
+body {
+    background-color: #f2f0eb; /* Light cream background */
+    min-height: 100vh;
+    margin-top: 106px; /* Increased to accommodate fixed navbar height */
+    padding-top: 10px; /* Extra padding to ensure separation */
+}
+nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6e4f2eff !important; /* Dark brown background */
+    z-index: 1000;
+    height: 96px; /* Specific height for navbar */
+}
+.navbar-nav {
+    margin-left: 20px;
+}
+.navbar-nav .nav-link, .navbar-brand {
+    color: #f2f0eb;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Comfortaa', sans-serif; /* Comfortaa font for navbar links */
+}
+h1, h2, h3 {
+    font-family: 'Noto Serif Thai', serif; /* Noto Serif Thai for headings */
+}
+span, a, p, h4, h5, h6 {
+    font-family: 'Comfortaa', sans-serif; /* Comfortaa for other text elements */
+}
+.container.main {
+    background-color: #f2f0eb;
+    padding: 10px 40px;
+}
+@media screen and (max-width: 768px) {
+    .container.main {
+        padding: 40px 20px;
+    }
+    body {
+        margin-top: 96px; /* Adjust top margin on smaller screens */
+    }
+}

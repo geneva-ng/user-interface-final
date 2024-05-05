@@ -3,14 +3,6 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "centerImage": {
-        "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713370936/espresso_machine_no_glass_focw4r.png",
-        "alt": "Espresso Machine"
-      },
-      "rightImage": {
-        "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371331/espresso_glass_2_empty_brnxsz.png",
-        "alt": "empty espresso glass"
-      },
       "prompt": "What is the first key ingredient mentioned in the process of making a cappuccino?",
       "options": ["Milk", "Sugar", "Espresso", "Water"],
       "correct_answer": "Espresso"
