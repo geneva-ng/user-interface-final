@@ -1,6 +1,6 @@
 [{
     "id": 1,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Cappucino",
     "leftText1": "We are going to begin by learning how to make the classic cappucino.",
     "leftText2": "",
@@ -20,7 +20,7 @@
     },
     "states": {
       "initial": {
-		"action": "initial",
+        "action": "initial",
         "next": "enableContinue"
       },
       "enableContinue": {
@@ -31,7 +31,7 @@
   },
   {
     "id": 2,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Grinding the beans",
     "leftText1": "To prepare the espresso, we begin by grinding the coffee beans.",
     "leftText2": "",
@@ -51,7 +51,7 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "enableContinue"
       },
       "enableContinue": {
@@ -63,7 +63,7 @@
   },
   {
     "id": 3,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Preparing the espresso",
     "leftText1": "Now we need to tamp down the espresso grounds with the <b>tamper</b> on the right.",
     "leftText2": "",
@@ -83,25 +83,25 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "dragAndDrop"
       },
-	"dragAndDrop": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage"
       },
-	"changeImage": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713369212/portafilter_with_tamper_u7hzq4.png",
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713369212/portafilter_with_tamper_u7hzq4.png",
         "next": "changeText"
       },
-	"changeText": {
-		"action": "changeText",
-		"target": "#rightText2",
-		"text": "Great Job!",
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "Great Job!",
         "next": "enableContinue"
       },
       "enableContinue": {
@@ -112,7 +112,7 @@
   },
   {
     "id": 4,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Pulling the shot",
     "leftText1": "After attaching the portafilter to the espresso machine, it's time to pull the espresso shot.",
     "leftText2": "",
@@ -123,7 +123,7 @@
       "alt": ""
     },
     "centerImage": {
-      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713370936/espresso_machine_no_glass_focw4r.png",
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1715044488/espresso_machine_with_arrow_phz7ud.png",
       "alt": "Espresso Machine"
     },
     "rightImage": {
@@ -132,43 +132,48 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "dragAndDrop"
       },
-	"dragAndDrop": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage"
       },
-	"changeImage": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371047/espresso_machine_green_button_empty_glass_a61tkv.png",
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371047/espresso_machine_green_button_empty_glass_a61tkv.png",
         "next": "changeText"
       },
-	"changeText": {
-		"action": "changeText",
-		"target": "#rightText1",
-		"text": "Now click on the <b>single</b> button to pull the shot.",
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Now click on the <b>single</b> button to pull the shot.",
         "next": "clickableArea"
       },
-		"clickableArea": {
-      "action": "clickableArea",
-      "target": "#imageWrapper",
-      "area": { "x": 324, "y": 132, "width": 36, "height": 36 },
-      "next": "changeImage2"
-    },
-	"changeImage2": {
-		"action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371042/espresso_machine_full_glass_bva28h.png",
+      "clickableArea": {
+        "action": "clickableArea",
+        "target": "#imageWrapper",
+        "area": {
+          "x": 324,
+          "y": 132,
+          "width": 36,
+          "height": 36
+        },
+        "next": "changeImage2"
+      },
+      "changeImage2": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371042/espresso_machine_full_glass_bva28h.png",
         "next": "changeText2"
       },
-		"changeText2": {
-		"action": "changeText",
-		"target": "#rightText2",
-		"text": "Great job!",
+      "changeText2": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "Great job!",
         "next": "enableContinue"
       },
 
@@ -181,7 +186,7 @@
   },
   {
     "id": 5,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Adding the espresso",
     "leftText1": "Now we add the espresso to the drink.",
     "leftText2": "",
@@ -201,25 +206,25 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "dragAndDrop"
       },
-	"dragAndDrop": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage"
       },
-	"changeImage": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714576186/coffee_mug_with_espresso_pg2lyr.png",
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714576186/coffee_mug_with_espresso_pg2lyr.png",
         "next": "changeText"
       },
-	"changeText": {
-		"action": "changeText",
-		"target": "#rightText2",
-		"text": "Great Job!",
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "Great Job!",
         "next": "enableContinue"
       },
       "enableContinue": {
@@ -231,7 +236,7 @@
   },
   {
     "id": 6,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Steaming the milk",
     "leftText1": "Time to steam the milk.",
     "leftText2": "",
@@ -242,7 +247,7 @@
       "alt": ""
     },
     "centerImage": {
-      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1714578106/espresso_machine_with_no_tumbler_yuhbzo.png",
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1715044728/espresso_machine_with_arrow_for_steam_wand_rfjoe3.png",
       "alt": "espresso machine"
     },
     "rightImage": {
@@ -251,49 +256,54 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "dragAndDrop"
       },
-	"dragAndDrop": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage"
       },
-	"changeImage": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714577946/espresso_machine_with_empty_tumbler_f8lkgy.png",
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714577946/espresso_machine_with_empty_tumbler_f8lkgy.png",
         "next": "changeText"
       },
-	"changeText": {
-		"action": "changeText",
-		"target": "#rightText1",
-		"text": "Now click on the <b>steam dial</b> to begin steaming the milk.",
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Now click on the <b>steam dial</b> to begin steaming the milk.",
         "next": "clickableArea"
       },
-		"clickableArea": {
-      "action": "clickableArea",
-      "target": "#imageWrapper",
-      "area": { "x": 390, "y": 104, "width": 44, "height": 64 },
-      "next": "changeImage2"
-    },
-	"changeImage2": {
-		"action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714577942/espresso_machine_with_full_tumbler_qw57ok.png",
+      "clickableArea": {
+        "action": "clickableArea",
+        "target": "#imageWrapper",
+        "area": {
+          "x": 390,
+          "y": 104,
+          "width": 44,
+          "height": 64
+        },
+        "next": "changeImage2"
+      },
+      "changeImage2": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714577942/espresso_machine_with_full_tumbler_qw57ok.png",
         "next": "changeText2"
       },
-		"changeText2": {
-		"action": "changeText",
-		"target": "#rightText1",
-		"text": "Great Job! The milk should be heated to <b>150 degrees</b>.",
+      "changeText2": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Great Job! The milk should be heated to <b>150 degrees</b>.",
         "next": "changeText3"
       },
-		"changeText3": {
-		"action": "changeText",
-		"target": "#rightText2",
-		"text": "Be sure to let the wand <b>aerate</b> the milk for proper foam!",
+      "changeText3": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "Be sure to let the wand <b>aerate</b> the milk for proper foam!",
         "next": "enableContinue"
       },
 
@@ -306,7 +316,7 @@
   },
   {
     "id": 7,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Adding the milk and foam",
     "leftText1": "Now we can add the <b>milk</b> and <b>foam</b> to the drink.",
     "leftText2": "",
@@ -326,34 +336,34 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "dragAndDrop"
       },
-	"dragAndDrop": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage"
       },
-	"changeImage": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714588125/coffee_mug_with_espresso_and_milk_foam_tfcris.png",
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714588125/coffee_mug_with_espresso_and_milk_foam_tfcris.png",
         "next": "changeText"
       },
-	"changeText": {
-		"action": "changeText",
-		"target": "#rightText1",
-		"text": "Great job!",
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Great job!",
         "next": "changeText2"
       },
-	"changeText2": {
-		"action": "changeText",
-		"target": "#rightText2",
-		"text": "If we have <b>aerated</b> the milk properly, the foam should pour naturally on the top.",
+      "changeText2": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "If we have <b>aerated</b> the milk properly, the foam should pour naturally on the top.",
         "next": "enableContinue"
       },
-	"enableContinue": {
+      "enableContinue": {
         "action": "enable",
         "target": "#continueButton"
       }
@@ -362,7 +372,7 @@
   },
   {
     "id": 8,
-	"lastPage": false,
+    "lastPage": false,
     "title": "Cappuccino complete!",
     "leftText1": "Great work! Our cappuccino is complete.",
     "leftText2": "",
@@ -382,7 +392,7 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "enableContinue"
       },
 
@@ -393,9 +403,82 @@
 
     }
   },
-  {
+    {
     "id": 9,
-	"lastPage": false,
+    "lastPage": false,
+    "title": "Making a latte",
+    "leftText1": "Let's add all of the ingredients needed to make a latte.",
+    "leftText2": "",
+    "rightText1": "First lets begin by dragging the espresso into the coffee glass.",
+    "rightText2": "",
+    "leftImage": {
+      "src": "",
+      "alt": ""
+    },
+    "centerImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590575/mocha_glass_empty_foxiyl.png",
+      "alt": "mocha glass"
+    },
+    "rightImage": {
+      "src": "https://res.cloudinary.com/dumokuucq/image/upload/v1713371338/espresso_glass_2_full_fwpdqz.png",
+      "alt": "espresso glass"
+    },
+    "states": {
+      "initial": {
+        "action": "initial",
+        "next": "dragAndDrop"
+      },
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
+        "next": "changeImage"
+      },
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590577/mocha_glass_espresso_l2laoj.png",
+        "next": "changeText"
+      },
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Next, drag the tumbler to the glass to add <b>two parts</b> of milk and a <b>light topping</b> of foam.",
+        "next": "changeImage2"
+      },
+      "changeImage2": {
+        "action": "changeImage",
+        "target": "#rightImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713375366/milk_tumbler_foam_lt1gva.png",
+        "next": "dragAndDrop2"
+      },
+      "dragAndDrop2": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
+        "next": "changeText3"
+      },
+      "changeText3": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "Great job! The latte is just like the cappuccino except with less foam and more milk!",
+        "next": "changeImage5"
+      },
+      "changeImage5": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1715042916/latte_with_foam_vrmv7a.png",
+        "next": "enableContinue"
+      },
+      "enableContinue": {
+        "action": "enable",
+        "target": "#continueButton"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "lastPage": false,
     "title": "Making a mocha",
     "leftText1": "Let's add all of the ingredients needed to make a mocha",
     "leftText2": "",
@@ -415,84 +498,85 @@
     },
     "states": {
       "initial": {
-		"action": "initial",
+        "action": "initial",
         "next": "dragAndDrop"
       },
-		"dragAndDrop": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage"
       },
-	"changeImage": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590577/mocha_glass_espresso_l2laoj.png",
+      "changeImage": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590577/mocha_glass_espresso_l2laoj.png",
         "next": "changeText"
       },
-	"changeText": {
-		"action": "changeText",
-		"target": "#rightText1",
-		"text": "Next add <b>one serving</b> of chocolate.",
+      "changeText": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Next add <b>one serving</b> of chocolate.",
         "next": "changeImage2"
       },
-	"changeImage2": {
-		 "action": "changeImage",
-		"target": "#rightImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714591877/pngimg.com_-_chocolate_PNG27_k6comw.png",
+      "changeImage2": {
+        "action": "changeImage",
+        "target": "#rightImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714591877/pngimg.com_-_chocolate_PNG27_k6comw.png",
         "next": "dragAndDrop2"
       },
-		"dragAndDrop2": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop2": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeImage3"
       },
-		"changeImage3": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590576/mocha_glass_chocolate_axtpyc.png",
+      "changeImage3": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590576/mocha_glass_chocolate_axtpyc.png",
         "next": "changeText2"
       },
-	"changeText2": {
-		"action": "changeText",
-		"target": "#rightText1",
-		"text": "Next, drag the tumbler to the glass to add <b>two parts</b> of milk and <b> one part</b> of foam.",
+      "changeText2": {
+        "action": "changeText",
+        "target": "#rightText1",
+        "text": "Next, drag the tumbler to the glass to add <b>two parts</b> of milk and <b> one part</b> of foam.",
         "next": "changeImage4"
       },
-	"changeImage4": {
-		 "action": "changeImage",
-		"target": "#rightImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713375366/milk_tumbler_foam_lt1gva.png",
+      "changeImage4": {
+        "action": "changeImage",
+        "target": "#rightImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1713375366/milk_tumbler_foam_lt1gva.png",
         "next": "dragAndDrop3"
       },
-	"dragAndDrop3": {
-		 "action": "drag",
-		"source": "#rightImage",
-		"target": "#centerImage",
+      "dragAndDrop3": {
+        "action": "drag",
+        "source": "#rightImage",
+        "target": "#centerImage",
         "next": "changeText3"
       },
-	"changeText3": {
-		"action": "changeText",
-		"target": "#rightText2",
-		"text": "Great job! You can also add <b>whipped cream</b> as an option!",
+      "changeText3": {
+        "action": "changeText",
+        "target": "#rightText2",
+        "text": "Great job! You can also add <b>whipped cream</b> as an option!",
         "next": "changeImage5"
       },
-	"changeImage5": {
-		 "action": "changeImage",
-		"target": "#centerImage",
-		"url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590575/mocha_glass_foam_ng7gv1.png",
+      "changeImage5": {
+        "action": "changeImage",
+        "target": "#centerImage",
+        "url": "https://res.cloudinary.com/dumokuucq/image/upload/v1714590575/mocha_glass_foam_ng7gv1.png",
         "next": "enableContinue"
       },
       "enableContinue": {
         "action": "enable",
         "target": "#continueButton"
       }
-  }
+    }
   },
-   {
-    "id": 10,
-	"lastPage": true,
+
+  {
+    "id": 11,
+    "lastPage": true,
     "title": "Lesson complete",
     "leftText1": "",
     "leftText2": "",
@@ -512,23 +596,23 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "lastPage"
       },
 
       "lastPage": {
         "action": "lastPage",
-		  "centerText" : "<h5 class = \"col-12 m-1\"> You made it through the lesson, great work! What would you like to do next?</h5>",
-		 "centerButton": "<a href=\"/start_quiz\" class=\" col-12 m-1 btn btn-primary\">Take the Quiz!</a>",
-		  "centerButton2": "<a href=\"/learn/1\" class=\"col-12 m-1 btn btn-primary\">Restart lesson</a>",
+        "centerText": "<h5 class = \"col-12 m-1\"> You made it through the lesson, great work! What would you like to do next?</h5>",
+        "centerButton": "<a href=\"/start_quiz\" class=\" col-12 m-1 btn btn-primary\">Take the Quiz!</a>",
+        "centerButton2": "<a href=\"/learn/1\" class=\"col-12 m-1 btn btn-primary\">Restart lesson</a>",
         "target": "#continueButton"
       }
-	  
-  }
+
+    }
   },
-    {
-    "id": 11,
-	"lastPage": true,
+  {
+    "id": 12,
+    "lastPage": true,
     "title": "",
     "leftText1": "",
     "leftText2": "",
@@ -548,16 +632,16 @@
     },
     "states": {
       "initial": {
-		 "action": "initial",
+        "action": "initial",
         "next": "enableContinue"
       },
 
-		
+
       "enableContinue": {
         "action": "enable",
         "target": "#continueButton"
       }
-	  
-  }
+
+    }
   }
 ]
