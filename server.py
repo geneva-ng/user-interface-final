@@ -49,14 +49,12 @@ def quiz():
 
 @app.route('/submit_quiz', methods=['POST'])
 def submit_quiz():
-    answers = request.json.get('answers')
-    correct = 0
-    for answer, question in zip(answers, session.get('questions', [])):
-        if question['type'] == 'multiple-choice' and answer == question['correct_answer']:
-            correct += 1
-        elif question['type'] == 'drag-and-drop' and answer == question['correct_answer']:
-            correct += 1
-    return jsonify(score=correct, total=len(session['questions']))
+    data = request.get_json()
+    answers = data.get('answers')
+    received_score = data.get('score')  # Get the final score directly from the client
+
+    return jsonify(score=received_score, total=len(session['questions']))
+
 
 @app.route('/results')
 def results():
