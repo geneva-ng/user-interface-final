@@ -11,6 +11,11 @@
 </div>
 <div id="quizResults" class="mt-4 quiz-results" style="display:none;">
     <!-- Quiz results will be shown here by quiz.js -->
+    
+<!-- Placeholder for feedback -->
+<div id='feedback' class='feedback;'></div>
+
+
 </div>
 {% endblock %}
 {% block head %}
@@ -62,6 +67,10 @@
 
   .btn:hover {
     background-color: #e0ddd8; /* Slightly darker shade of #f2f0eb */
+  }
+
+  #quizContainer .feedback {
+    color: white !important;  /* Use !important to ensure this rule takes precedence */
   }
 
   .btn:active {
